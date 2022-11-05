@@ -1,0 +1,190 @@
+@import "../utils/color";
+@import "../utils/animation";
+
+.filepond {
+  // min-height: 12rem;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.upload_container {
+  font-size: 1.5rem;
+  width: 100%;
+  .upload {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    background-color: $primary;
+    color: #fff;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    cursor: pointer;
+  }
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.unactive {
+  animation: closeMenu 0.6s ease-in;
+  width: 0rem;
+}
+
+.active {
+  animation: openMenu 0.6s ease-out;
+  width: 80rem;
+}
+
+.menu_container {
+  margin: 1.2rem 3rem;
+  &_btn {
+    z-index: 4;
+    cursor: pointer;
+    width: 3rem;
+    height: 0.5rem;
+    background-color: white;
+    position: relative;
+    transition: all 0.4s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 3rem;
+    margin-right: 2rem;
+
+    &::after,
+    &::before {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      content: "";
+      position: absolute;
+      width: 3rem;
+      height: 0.5rem;
+      background: white;
+      transition: all 0.4s;
+    }
+
+    &::after {
+      top: 1rem;
+    }
+
+    &::before {
+      bottom: 1rem;
+    }
+  }
+}
+
+.menu_active {
+  .menu_container_btn {
+    transform: translateX(0);
+    border-radius: 1rem;
+    background-color: $primary;
+    width: 1.5rem;
+    height: 0.2rem;
+    top: -0.8rem;
+    margin-top: 1.8rem;
+
+    &::after,
+    &::before {
+      width: 1rem;
+      height: 0.2rem;
+      background-color: $primary;
+    }
+
+    &::after {
+      border-radius: 1rem;
+      transform: rotateZ(45deg) translateY(0rem) translateX(-1rem);
+    }
+
+    &::before {
+      border-radius: 1rem;
+      transform: rotateZ(-45deg) translateY(0rem) translateX(-1rem);
+    }
+  }
+}
+
+.menu_unactive {
+  .menu_container_btn {
+    transform: translateX(-9rem);
+
+    &:hover {
+      content: "haha";
+    }
+  }
+}
+
+.header {
+  display: flex;
+  position: relative;
+  width: 100%;
+
+  &_title {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  &_icon {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: -0.8rem;
+    right: 0;
+
+    &:hover {
+      background-color: $btn_hover;
+    }
+
+    svg {
+      width: 2rem;
+      height: 2rem;
+      path {
+        fill: $primary;
+      }
+    }
+  }
+}
+
+.navbar {
+  margin-top: 3rem;
+  height: 4.4rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-bottom: solid 0.1rem $border;
+
+  &_item {
+    padding: 1.2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 1s;
+
+    &:hover {
+      background-color: $btn_hover;
+      color: $primary;
+    }
+  }
+
+  &_active {
+    border-bottom: solid 0.1rem $primary;
+    color: $primary;
+  }
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 11rem);
+}

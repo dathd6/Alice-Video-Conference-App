@@ -1,0 +1,3 @@
+mutation SaveDocument($options: SaveDocumentInput!) {
+  saveDocument(options: $options)
+}

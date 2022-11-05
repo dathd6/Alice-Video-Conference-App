@@ -1,0 +1,239 @@
+@import "../utils/color";
+
+.upload_container {
+  font-size: 1.5rem;
+  width: 100%;
+  padding: 2rem;
+  .upload {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    background-color: $primary;
+    color: #fff;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    cursor: pointer;
+  }
+}
+
+.container {
+  .banner {
+    width: 100%;
+    height: 20rem;
+    background-repeat: no-repeat;
+    background-size: auto;
+
+    .edit {
+      width: 100%;
+      height: 100%;
+      background-color: #050505af;
+
+      display: none;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    &:hover {
+      .edit {
+        display: flex;
+      }
+    }
+  }
+  .wrap {
+    transform: translateY(-6.5rem);
+    padding: 0 2rem;
+    position: relative;
+    font-size: 1.5rem;
+    color: #5b7083;
+
+    .button {
+      position: absolute;
+      top: 8rem;
+      right: 2rem;
+      color: $primary;
+      border-radius: 2rem;
+      border: solid 0.1rem $primary;
+      padding: 1.2rem 2rem;
+
+      cursor: pointer;
+      &:hover {
+        background-color: #2496dd2c;
+      }
+    }
+
+    .button_queue {
+      position: absolute;
+      top: 8rem;
+      right: 2rem;
+      background-color: $border;
+      border-radius: 2rem;
+      border: solid 0.1rem $border;
+      padding: 1.2rem 2rem;
+
+      cursor: pointer;
+      &:hover {
+        background-color: #6969692c;
+      }
+    }
+
+    .button_accept {
+      position: absolute;
+      top: 8rem;
+      right: 2rem;
+      color: rgb(114, 25, 231);
+      border-radius: 2rem;
+      border: solid 0.1rem rgb(114, 25, 231);
+      padding: 1.2rem 2rem;
+
+      cursor: pointer;
+      &:hover {
+        background-color: rgba(114, 25, 231, 0.363);
+      }
+    }
+
+    .button_followed {
+      &::after {
+        content: "Following";
+      }
+      position: absolute;
+      top: 8rem;
+      right: 2rem;
+      color: #fff;
+      background-color: $primary;
+      border-radius: 2rem;
+      border: solid 0.1rem $primary;
+      padding: 1.2rem 2rem;
+
+      cursor: pointer;
+      &:hover {
+        &::after {
+          content: "Unfollow";
+        }
+        background-color: red;
+        border: solid 0.1rem red;
+      }
+    }
+
+    .avatar {
+      position: relative;
+      border-radius: 100%;
+      width: 13.5rem;
+      height: 13.5rem;
+      img {
+        position: relative;
+        border: solid 0.5rem #fff;
+        border-radius: 100%;
+        width: 13.5rem;
+        height: 13.5rem;
+      }
+
+      &:hover {
+        .edit {
+          display: flex;
+        }
+      }
+
+      .edit {
+        cursor: pointer;
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+        width: 12.5rem;
+        height: 12.5rem;
+        background-color: #050505af;
+        border-radius: 100%;
+
+        display: none;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .username {
+      color: #050505;
+      font-weight: 700;
+      font-size: 2rem;
+    }
+
+    .time {
+      margin-top: 1.2rem;
+      display: flex;
+      align-items: center;
+
+      span {
+        margin-left: 1rem;
+      }
+    }
+  }
+  .navbar {
+    margin-top: 3rem;
+    height: 4.4rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: solid 0.1rem $border;
+
+    &_item {
+      padding: 1.2rem;
+      font-size: 1.5rem;
+      text-align: center;
+      cursor: pointer;
+      transition: all 1s;
+
+      &:hover {
+        background-color: $btn_hover;
+        color: $primary;
+      }
+    }
+
+    &_active {
+      border-bottom: solid 0.1rem $primary;
+      color: $primary;
+    }
+  }
+  .list {
+    .empty {
+      width: 100%;
+    }
+    &:last-child {
+      height: calc(100vh - 5.3rem);
+    }
+    .item {
+      display: flex;
+      padding: 1rem 2rem;
+      border-bottom: solid 0.1rem $border;
+      position: relative;
+      .avatar {
+        margin-right: 1.2rem;
+        img {
+          width: 5rem;
+          height: 5rem;
+          border-radius: 0.5rem;
+        }
+      }
+      .info {
+        .fullname {
+          font-size: 1.7rem;
+          color: #050505;
+        }
+        .username {
+          font-size: 1.4rem;
+          color: #5b7083;
+        }
+      }
+      .button {
+        position: absolute;
+        top: 1.7rem;
+        right: 2rem;
+        font-size: 1.2rem;
+        cursor: pointer;
+
+        color: #fff;
+        background-color: $primary;
+        padding: 1.2rem;
+        border-radius: 2rem;
+      }
+    }
+  }
+}

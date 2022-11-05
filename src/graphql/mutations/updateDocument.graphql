@@ -1,0 +1,3 @@
+mutation UpdateDocument($options: UpdateDocumentInput!) {
+  updateDocument(options: $options)
+}

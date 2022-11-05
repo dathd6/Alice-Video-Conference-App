@@ -1,0 +1,233 @@
+@import "../utils/color";
+
+.container {
+  padding: 1.6rem 1.6rem 0 1.6rem;
+  width: 100%;
+  display: inline-flex;
+
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-right: 2rem;
+  }
+  .content {
+    width: 100%;
+
+    .input {
+      width: 100%;
+      font-size: 1.6rem;
+      padding: 1.2rem 0.6rem;
+      border: 0;
+    }
+    .list_btn {
+      position: relative;
+      .btn {
+        position: absolute;
+        padding: 1.1rem 1.4rem;
+        border-radius: 2rem;
+        font-weight: 700;
+        background-color: $primary;
+        color: #fff;
+
+        cursor: pointer;
+        bottom: 1rem;
+        right: 0;
+
+        &:hover {
+          background-color: $btn_alice_hover;
+        }
+      }
+
+      .btn_setting {
+        width: 100%;
+        padding-top: 1rem;
+        display: inline-flex;
+        margin-bottom: 0.5rem;
+        border-top: solid 0.1rem $border;
+
+        div {
+          display: flex;
+          align-items: center;
+          margin-right: 0.8rem;
+          border-radius: 100%;
+          width: 4rem;
+          height: 4rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        svg {
+          width: 2rem;
+          height: 2rem;
+          margin-right: 0.5rem;
+        }
+        .unactive {
+          color: rgb(255, 91, 91);
+          svg {
+            path {
+              fill: rgb(255, 91, 91);
+            }
+          }
+
+          &:hover {
+            background-color: rgba(255, 91, 91, 0.233);
+          }
+        }
+        .active {
+          color: $primary;
+          svg {
+            path {
+              fill: $primary;
+            }
+          }
+
+          &:hover {
+            background-color: $btn_hover;
+          }
+        }
+
+        .disable {
+          svg {
+            path {
+              fill: rgb(204, 204, 204);
+            }
+          }
+        }
+      }
+
+      .state {
+        width: fit-content;
+
+        padding: 0.3rem 0.6rem;
+        border-radius: 1rem;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+        cursor: pointer;
+
+        &_btn {
+          display: flex;
+          align-items: center;
+        }
+
+        position: relative;
+
+        .noDisplay {
+          display: none;
+        }
+
+        .chooser {
+          z-index: 12;
+          position: absolute;
+          bottom: -780%;
+          left: -50%;
+          background-color: #fff;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          width: 30rem;
+          border-radius: 2rem;
+          padding: 1.6rem 0 0 0;
+
+          font-size: 1.2rem;
+
+          .pointer {
+            position: absolute;
+            top: -1rem;
+            left: 15rem;
+            width: 1rem;
+            height: 1rem;
+
+            svg {
+              path {
+                fill: rgb(214, 214, 214);
+                // fill: #fff;
+              }
+            }
+          }
+
+          .intro {
+            padding: 0 1.6rem;
+          }
+
+          .sub_intro {
+            padding: 0 1.6rem;
+            color: #5b7083;
+          }
+
+          .list_option {
+            display: flex;
+            flex-direction: column;
+            margin-top: 1rem;
+
+            .option {
+              padding: 1rem 1.6rem;
+              display: inline-flex;
+              align-items: center;
+              font-weight: 500;
+              position: relative;
+
+              &:last-child {
+                border-bottom-left-radius: 2rem;
+                border-bottom-right-radius: 2rem;
+              }
+
+              &:hover {
+                background-color: #f7f7f7;
+              }
+
+              &_choose {
+                position: absolute;
+                right: 1.6rem;
+
+                svg {
+                  path {
+                    fill: $primary;
+                  }
+                }
+              }
+
+              &_icon {
+                margin-right: 1rem;
+                width: 4rem;
+                height: 4rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 100%;
+                background-color: $primary;
+
+                svg {
+                  width: 2rem;
+                  height: 2rem;
+                  path {
+                    fill: #fff;
+                  }
+                }
+              }
+              &_text {
+              }
+            }
+          }
+        }
+
+        &:hover {
+          background-color: $btn_hover;
+        }
+
+        .icon {
+          margin-right: 1rem;
+          svg {
+            width: 1.7rem;
+            height: 1.7rem;
+            path {
+              fill: $primary;
+            }
+          }
+        }
+        .text {
+          color: $primary;
+        }
+      }
+    }
+  }
+}

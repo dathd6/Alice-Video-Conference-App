@@ -1,0 +1,321 @@
+@import "../utils/color";
+
+.container {
+  height: 100%;
+
+  .list {
+    height: calc(100% - 4.5rem - 8rem);
+    overflow-y: auto;
+    z-index: -3;
+    .user {
+      display: flex;
+      padding: 1rem 2rem;
+      position: relative;
+      // border-bottom: solid 0.1rem $border;
+      z-index: 3;
+
+      .avatar {
+        margin-right: 1rem;
+        img {
+          width: 4.5rem;
+          height: 4.5rem;
+          border-radius: 1rem;
+        }
+      }
+      .content {
+        p {
+          color: #5b7083;
+        }
+      }
+      .util {
+        display: inline-flex;
+        position: absolute;
+        right: 0;
+
+        div {
+          display: flex;
+          align-items: center;
+          margin-right: 0.8rem;
+          border-radius: 100%;
+          width: 4rem;
+          height: 4rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        svg {
+          width: 2rem;
+          height: 2rem;
+          margin-right: 0.5rem;
+        }
+        .unactive {
+          color: rgb(255, 91, 91);
+          svg {
+            path {
+              fill: rgb(255, 91, 91);
+            }
+          }
+
+          &:hover {
+            background-color: rgba(255, 91, 91, 0.233);
+          }
+        }
+        .active {
+          color: $primary;
+          svg {
+            path {
+              fill: $primary;
+            }
+          }
+
+          &:hover {
+            background-color: $btn_hover;
+          }
+        }
+      }
+    }
+  }
+
+  .search_form {
+    width: 100%;
+    display: flex;
+    margin: 1rem auto 0rem auto;
+    justify-content: center;
+    border-bottom: solid 0.1rem $border;
+    padding-bottom: 1rem;
+
+    .input {
+      position: relative;
+      width: 90%;
+      margin: 0 0.4rem;
+
+      .icon_container {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        svg {
+          width: 2rem;
+          height: 2rem;
+
+          path {
+            fill: $primary;
+          }
+        }
+      }
+
+      input {
+        border-radius: 5rem;
+        background-color: #ebeef0;
+        border: solid 0.1rem #ebeef0;
+        height: 3.5rem;
+        // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        padding-left: 2rem;
+        width: 100%;
+
+        &:focus-visible {
+          background-color: #fff;
+          border: solid 0.1rem #1da1f2;
+        }
+
+        &:focus-visible + .search,
+        .input:focus .search {
+          &::before {
+            background: #1da1f2;
+          }
+          &::after {
+            border: 0.25rem solid #1da1f2;
+          }
+        }
+        &:focus-visible + .close,
+        .input:focus .close {
+          &::after {
+            background: #1da1f2;
+          }
+        }
+      }
+      .search {
+        display: inline-block;
+        position: absolute;
+        top: 0.8rem;
+        right: 2rem;
+        width: 2rem;
+        height: 2rem;
+        cursor: pointer;
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 10%;
+          height: 40%;
+          background: #7f8183;
+          position: absolute;
+          left: 75%;
+          top: 75%;
+          transform: translate(-50%, -50%) rotate(-45deg);
+          transition: all 0.3s;
+        }
+        &::after {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          width: 80%;
+          height: 75%;
+          border: 0.25rem solid #7f8183;
+          border-radius: 50%;
+          top: 40%;
+          left: 40%;
+          transform: translate(-50%, -50%) rotate(0deg);
+          transition: all 0.3s;
+        }
+      }
+
+      .close {
+        &::before {
+          height: 80%;
+          left: 50%;
+          top: 50%;
+        }
+        &::after {
+          border-width: 0.15rem;
+          border-radius: 0;
+          background: #7f8183;
+          width: 0;
+          height: 70%;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%) rotate(45deg);
+          transition: all 0.3s, background 0s 0.3s;
+        }
+      }
+    }
+  }
+
+  .config {
+    width: 100%;
+    height: 8rem;
+    // background-color: black;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 0.1rem $border;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    &_wrap {
+      z-index: 1;
+      position: relative;
+      margin: 0 1rem;
+      .main {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 100%;
+        background: $primary;
+        transform: translateY(-3rem);
+        border: solid 0.7rem #fff;
+        position: relative;
+        z-index: 1;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        &:active {
+          border: solid 0.8rem #fff;
+        }
+
+        svg {
+          top: 50%;
+          left: 50%;
+          transform: translate(-45%, -60%);
+          position: absolute;
+          width: 4rem;
+          height: 4rem;
+          fill: #fff;
+        }
+      }
+
+      .remove {
+        position: absolute;
+        bottom: 2.5rem;
+        right: -0.5rem;
+        z-index: 10;
+        width: 4.2rem;
+        height: 4.2rem;
+        background-color: #fff;
+        border-radius: 100%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+          width: 2.3rem;
+          height: 2.3rem;
+          path {
+            fill: #ff5930;
+          }
+        }
+      }
+    }
+
+    &_icon {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+
+      svg {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+
+    .convert {
+      border: solid 0.2rem #7966c8;
+      background-color: #7966c8;
+      transform: rotateY(180deg);
+      // &:hover {
+      //   background-color: #d9d3ff;
+      // }
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    &_clip {
+      border: solid 0.2rem #72b587;
+      background-color: #72b587;
+      // &:hover {
+      //   background-color: #c3e8d1;
+      // }
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .main_border {
+      position: absolute;
+      width: 10.2rem;
+      height: 10.2rem;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -80%);
+      border-radius: 100%;
+      z-index: -1;
+
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      background-color: $border;
+    }
+  }
+}
+
+.user_not_login_avatar {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #fff;
+}

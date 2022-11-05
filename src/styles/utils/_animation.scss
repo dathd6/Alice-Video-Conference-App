@@ -1,0 +1,144 @@
+@keyframes backward {
+  0% {
+  }
+  100% {
+    transform: translateX(-0.5rem);
+  }
+}
+
+@keyframes forward {
+  0% {
+  }
+  100% {
+    transform: translateX(0.5rem);
+  }
+}
+
+@keyframes click {
+  0% {
+  }
+  100% {
+  }
+}
+
+@keyframes openMenu {
+  0% {
+    width: 0rem;
+  }
+  100% {
+    width: 80rem;
+  }
+}
+
+@keyframes closeMenu {
+  0% {
+    width: 80rem;
+  }
+  100% {
+    width: 0rem;
+  }
+}
+
+@keyframes searching {
+  0% {
+    height: 0rem;
+  }
+  100% {
+    height: 50rem;
+  }
+}
+
+@keyframes appearing {
+  0% {
+    height: 0rem;
+    width: 0rem;
+    font-size: 0rem;
+  }
+  100% {
+    height: 50rem;
+    font-size: 1.2rem;
+    width: 50rem;
+  }
+}
+
+@keyframes logout {
+  0% {
+    height: 100%;
+    width: 0rem;
+    font-size: 0rem;
+  }
+
+  100% {
+    height: 100%;
+    width: 100%;
+    font-size: 1.3rem;
+  }
+}
+
+@keyframes svg {
+  0% {
+    width: 0rem;
+    height: 0rem;
+    margin-right: 0rem;
+  }
+
+  100% {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+  }
+}
+
+@keyframes assistance_text {
+  0% {
+    opacity: 0;
+    transform: translate(-80%, -50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: translate(10%, 0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0%, 0%);
+  }
+}
+
+.center {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .loader {
+    border: 1rem solid #f3f3f3; /* Light grey */
+    border-top: 1rem solid #1da1f2; /* Blue */
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    animation: spin 2s linear infinite;
+  }
+}
+
+.filepond--root {
+  margin-bottom: 0em;
+}
+
+.fade {
+  animation: fade 1s linear;
+}

@@ -1,0 +1,172 @@
+@import "../utils/color";
+
+.container {
+  background-color: #fff;
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  .search_form {
+    width: 100%;
+    display: flex;
+    margin: 0rem auto 0rem auto;
+    justify-content: center;
+    border-bottom: solid 0.1rem $border;
+    padding-bottom: 1rem;
+
+    .input {
+      position: relative;
+      width: 90%;
+      margin: 0 0.4rem;
+
+      .icon_container {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        svg {
+          width: 2rem;
+          height: 2rem;
+
+          path {
+            fill: $primary;
+          }
+        }
+      }
+
+      input {
+        border-radius: 5rem;
+        background-color: #ebeef0;
+        border: solid 0.1rem #ebeef0;
+        height: 3.5rem;
+        // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        padding-left: 2rem;
+        width: 100%;
+
+        &:focus-visible {
+          background-color: #fff;
+          border: solid 0.1rem #1da1f2;
+        }
+
+        &:focus-visible + .search,
+        .input:focus .search {
+          &::before {
+            background: #1da1f2;
+          }
+          &::after {
+            border: 0.25rem solid #1da1f2;
+          }
+        }
+        &:focus-visible + .close,
+        .input:focus .close {
+          &::after {
+            background: #1da1f2;
+          }
+        }
+      }
+      .search {
+        display: inline-block;
+        position: absolute;
+        top: 0.8rem;
+        right: 2rem;
+        width: 2rem;
+        height: 2rem;
+        cursor: pointer;
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 10%;
+          height: 40%;
+          background: #7f8183;
+          position: absolute;
+          left: 75%;
+          top: 75%;
+          transform: translate(-50%, -50%) rotate(-45deg);
+          transition: all 0.3s;
+        }
+        &::after {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          width: 80%;
+          height: 75%;
+          border: 0.25rem solid #7f8183;
+          border-radius: 50%;
+          top: 40%;
+          left: 40%;
+          transform: translate(-50%, -50%) rotate(0deg);
+          transition: all 0.3s;
+        }
+      }
+
+      .close {
+        &::before {
+          height: 80%;
+          left: 50%;
+          top: 50%;
+        }
+        &::after {
+          border-width: 0.15rem;
+          border-radius: 0;
+          background: #7f8183;
+          width: 0;
+          height: 70%;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%) rotate(45deg);
+          transition: all 0.3s, background 0s 0.3s;
+        }
+      }
+    }
+  }
+
+  .list {
+    height: 40rem;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      display: none; /* for Chrome, Safari, and Opera */
+    }
+    .empty {
+      width: 100%;
+    }
+
+    .item {
+      display: flex;
+      padding: 1rem 2rem;
+      border-bottom: solid 0.1rem $border;
+      position: relative;
+      .avatar {
+        margin-right: 1.2rem;
+        img {
+          width: 5rem;
+          height: 5rem;
+          border-radius: 0.5rem;
+        }
+      }
+      .info {
+        .fullname {
+          font-size: 1.7rem;
+          color: #050505;
+        }
+        .username {
+          font-size: 1.4rem;
+          color: #5b7083;
+        }
+      }
+      .button {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        font-size: 1.2rem;
+        width: 7rem;
+        text-align: center;
+        cursor: pointer;
+
+        color: #fff;
+        background-color: $primary;
+        padding: 0.7rem 2rem;
+        border-radius: 1rem;
+      }
+    }
+  }
+}

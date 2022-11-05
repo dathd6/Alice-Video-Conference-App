@@ -1,0 +1,5 @@
+query Relationships($id: Float!) {
+  relationships(id: $id) {
+    ...UserInfoFragment
+  }
+}

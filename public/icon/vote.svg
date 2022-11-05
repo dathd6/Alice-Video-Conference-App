@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<title>Vote 2</title>
+<g id="Vote_2">
+	<g id="_Group_">
+		<path id="_Path_" class="st0" d="M7.5,10.5c0,0,0.6-4.6,1.5-5.5s5.4-2,7-2.5c1.3-0.5,2.4-1.2,3.5-2c2.4,1,4,3.4,4,6    c-2.9,1.7-2.9,3.8-4.5,5c-0.8,0.7-1.9,1.1-3,1c-1.3,0.2-2.5,0.7-3.5,1.5c-1.2,0.8-3,1.5-4,0.5S9.9,11.4,11,11s3-1.4,3.5-2.5    c-0.4-0.6-1.3-0.7-1.5-1c-0.5,0.2-1,0.4-1.5,0.5l-1,2.5" style="fill: none; stroke: #303C42; stroke-linecap: round; stroke-linejoin: round;"/>
+		<line id="_Path_2" class="st0" x1="13.5" y1="18.5" x2="13.5" y2="13.5" style="fill: none; stroke: #303C42; stroke-linecap: round; stroke-linejoin: round;"/>
+		<path id="_Path_3" class="st0" d="M12,10.5H7c-0.8,0-1.5,0.7-1.5,1.5c0,0,0,0,0,0c0,2.1,0,6.5,0,6.5" style="fill: none; stroke: #303C42; stroke-linecap: round; stroke-linejoin: round;"/>
+	</g>
+	<path class="st0" d="M5.5,17.5H5c-0.3,0-0.5,0.2-0.5,0.5s0.2,0.5,0.5,0.5h9c0.3,0,0.5-0.2,0.5-0.5s-0.2-0.5-0.5-0.5h-0.5" style="fill: none; stroke: #303C42; stroke-linecap: round; stroke-linejoin: round;"/>
+	<polyline class="st0" points="0.5,23.5 0.5,20.5 18.5,20.5 18.5,23.5  " style="fill: none; stroke: #303C42; stroke-linecap: round; stroke-linejoin: round;"/>
+	<polyline class="st0" points="0.5,20.5 3.5,15.5 5.5,15.5  " style="fill: none; stroke: #303C42; stroke-linecap: round; stroke-linejoin: round;"/>
+	<polyline class="st0" points="13.5,15.5 15.5,15.5 18.5,20.5  " style="fill: none; stroke: #303C42; stroke-linecap: round; stroke-linejoin: round;"/>
+</g>
+
+	<metadata>
+		<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+			<rdf:Description about="https://iconscout.com/legal#licenses" dc:title="vote; election; elect; hand; put; 2" dc:description="vote; election; elect; hand; put; 2" dc:publisher="Iconscout" dc:date="2017-02-16" dc:format="image/svg+xml" dc:language="en">
+				<dc:creator>
+					<rdf:Bag>
+						<rdf:li>Alpár - Etele Méder</rdf:li>
+					</rdf:Bag>
+				</dc:creator>
+			</rdf:Description>
+		</rdf:RDF>
+    </metadata></svg>

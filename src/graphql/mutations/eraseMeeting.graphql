@@ -1,0 +1,3 @@
+mutation EraseMeeting($code: String!) {
+  eraseMeeting(code: $code)
+}

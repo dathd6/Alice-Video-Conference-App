@@ -1,0 +1,5 @@
+query GetUserById($id: Float!) {
+  getUserById(id: $id) {
+    ...UserInfoFragment
+  }
+}

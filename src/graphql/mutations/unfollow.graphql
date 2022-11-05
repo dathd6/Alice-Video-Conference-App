@@ -1,0 +1,3 @@
+mutation Unfollow($sender: Float!, $receiver: Float!) {
+  unfollow(sender: $sender, receiver: $receiver)
+}

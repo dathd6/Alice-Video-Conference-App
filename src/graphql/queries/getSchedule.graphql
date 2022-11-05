@@ -1,0 +1,10 @@
+query GetSchedule($id: Float!) {
+  getSchedule(id: $id) {
+    schedule {
+      ...ScheduleFragment
+    }
+    users {
+      ...UserFragment
+    }
+  }
+}

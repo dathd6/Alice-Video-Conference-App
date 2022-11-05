@@ -1,0 +1,21 @@
+mutation SaveSchedule(
+  $title: String!
+  $dateType: String!
+  $startAt: String!
+  $banner: String!
+  $members: [Float!]!
+  $description: String
+  $company: String
+) {
+  saveSchedule(
+    title: $title
+    dateType: $dateType
+    startAt: $startAt
+    banner: $banner
+    members: $members
+    description: $description
+    company: $company
+  ) {
+    ...ScheduleFragment
+  }
+}

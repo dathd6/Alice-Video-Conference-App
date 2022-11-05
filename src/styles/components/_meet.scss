@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Ballet&family=Rouge+Script&display=swap");
+
+.speacial_blur {
+  background-color: rgba(255, 255, 255, 0.411);
+  border-radius: 100%;
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .special_blur {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(1rem);
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.meet {
+  &_util {
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    &_container {
+      width: inherit;
+      position: relative;
+      height: inherit;
+
+      &_header {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 7rem;
+          margin-right: 0.7rem;
+        }
+
+        span {
+          font-family: "Rouge Script";
+          font-size: 4.2rem;
+          color: #fff;
+          font-weight: 700;
+        }
+      }
+
+      &_bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 1.2rem;
+        width: 100%;
+
+        &_button {
+          padding: 2.2rem;
+
+          border-radius: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          svg {
+            width: 2.6rem;
+            height: 2.6rem;
+            path {
+              fill: #fff;
+            }
+          }
+        }
+        &_phone {
+          background-color: #fc5d5b;
+          padding: 1rem;
+          width: 9rem;
+          height: 9rem;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          margin: 0 4rem;
+          border-radius: 3.1rem;
+
+          &:hover {
+            background-color: #eb6260;
+          }
+
+          svg {
+            width: 3.6rem;
+            height: 3.6rem;
+            path {
+              fill: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &_screen {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    background-color: #191b28;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &_main {
+      width: 100%;
+      height: 100%;
+      border-radius: 2rem;
+
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &_list {
+      top: 2rem;
+      right: 2rem;
+      position: absolute;
+      height: calc(12vh * 6 + 6rem);
+      display: inline-flex;
+      flex-direction: column;
+
+      overflow-x: scroll;
+
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      &_item {
+        margin-bottom: 1rem;
+        video {
+          width: calc(12vh * 16 / 9);
+          border-radius: 1rem;
+        }
+        img {
+          width: calc(12vh * 16 / 9);
+          height: calc(12vh);
+          border-radius: 1rem;
+        }
+      }
+    }
+  }
+}

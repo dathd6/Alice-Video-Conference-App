@@ -1,0 +1,11 @@
+fragment TranscriptFragment on Transcript {
+  id
+  context
+  type
+  userId
+  user {
+    ...UserFragment
+  }
+  startedAt
+  createdAt
+}

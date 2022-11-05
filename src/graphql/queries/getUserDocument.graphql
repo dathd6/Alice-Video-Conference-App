@@ -1,0 +1,8 @@
+query GetUserDocument($options: GetUserDocumentInput!) {
+  getUserDocument(options: $options) {
+    isAbsent
+    user {
+      ...UserFragment
+    }
+  }
+}

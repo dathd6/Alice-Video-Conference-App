@@ -1,0 +1,11 @@
+fragment MessageFragment on Message {
+  id
+  context
+  userId
+  user {
+    ...UserFragment
+  }
+  room
+  type
+  createdAt
+}

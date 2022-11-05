@@ -1,0 +1,195 @@
+@import "../utils/color";
+@import "../utils/animation";
+
+.input {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+
+  input {
+    height: 4.2rem;
+    width: 33rem;
+    border-radius: 5rem;
+    background-color: #ebeef0;
+    border: 0;
+    padding: 1.2rem 2rem 1.2rem 5.5rem;
+    // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    &:focus-visible {
+      background-color: #fff;
+      border: solid 0.1rem #1da1f2;
+    }
+
+    &:focus-visible + .search,
+    .input:focus .search {
+      &::before {
+        background: #1da1f2;
+      }
+      &::after {
+        border: 0.25rem solid #1da1f2;
+      }
+    }
+    &:focus-visible + .close,
+    .input:focus .close {
+      &::after {
+        background: #1da1f2;
+      }
+    }
+  }
+
+  .search {
+    display: inline-block;
+    position: absolute;
+    top: 1.1rem;
+    left: 2rem;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 10%;
+      height: 40%;
+      background: #7f8183;
+      position: absolute;
+      left: 75%;
+      top: 75%;
+      transform: translate(-50%, -50%) rotate(-45deg);
+      transition: all 0.3s;
+    }
+    &::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      width: 80%;
+      height: 75%;
+      border: 0.25rem solid #7f8183;
+      border-radius: 50%;
+      top: 40%;
+      left: 40%;
+      transform: translate(-50%, -50%) rotate(0deg);
+      transition: all 0.3s;
+    }
+  }
+
+  .close {
+    &::before {
+      height: 80%;
+      left: 50%;
+      top: 50%;
+    }
+    &::after {
+      border-width: 0.15rem;
+      border-radius: 0;
+      background: #7f8183;
+      width: 0;
+      height: 70%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+      transition: all 0.3s, background 0s 0.3s;
+    }
+  }
+
+  .content {
+    position: absolute;
+    flex-direction: column;
+    z-index: 10;
+    background-color: #fff;
+    width: 110%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    max-height: 50rem;
+    overflow: auto;
+
+    animation: searching 0.3s ease-in;
+
+    .item {
+      padding: 1.4rem 1rem;
+      position: relative;
+      display: flex;
+      border-bottom: solid 0.1rem $border;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #f7f9fa;
+      }
+
+      .avatar {
+        img {
+          width: 5rem;
+          height: 5rem;
+          border-radius: 100%;
+        }
+      }
+      .info {
+        margin-left: 1.3rem;
+        font-size: 1.5rem;
+
+        .username {
+          font-weight: 600;
+          font-size: 1.6rem;
+          display: flex;
+
+          p {
+            margin-right: 0.5rem;
+          }
+
+          svg {
+            width: 1.5rem;
+            fill: $primary;
+          }
+        }
+
+        .tag {
+          color: #5b7083;
+        }
+      }
+
+      .icon {
+        position: absolute;
+        top: 2.2rem;
+        right: 1.2rem;
+
+        svg {
+          width: 3rem;
+          height: 3rem;
+        }
+
+        p {
+          padding: 1.2rem 2rem;
+          border: 0.1rem solid $primary;
+          color: $primary;
+          font-size: 1.2rem;
+          border-radius: 2rem;
+        }
+      }
+    }
+
+    .header {
+      .wrap {
+        position: relative;
+        padding: 1.8rem 1.2rem;
+        .title {
+          font-size: 2.2rem;
+          font-weight: 700;
+        }
+        .more {
+          position: absolute;
+          top: 2.2rem;
+          right: 1.2rem;
+          color: $primary;
+          font-size: 1.5rem;
+        }
+      }
+
+      .border {
+        width: 100%;
+        height: 1rem;
+        background-color: #f7f9fa;
+        border-top: solid 0.1rem $border;
+        border-bottom: solid 0.1rem $border;
+      }
+    }
+  }
+}

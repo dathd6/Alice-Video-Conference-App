@@ -1,0 +1,13 @@
+fragment UserFragment on User {
+  id
+  username
+  fullname
+  email
+  avatar
+  banner
+  timeSpend
+  joined
+  cancel
+  document
+  createdAt
+}

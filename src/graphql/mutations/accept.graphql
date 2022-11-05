@@ -1,0 +1,3 @@
+mutation Accept($sender: Float!, $receiver: Float!) {
+  accept(sender: $sender, receiver: $receiver)
+}

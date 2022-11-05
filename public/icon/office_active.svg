@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Binder Files</title><g id="Binder_Files" data-name="Binder Files"><path d="M5,1H2A2,2,0,0,0,0,3V21a2,2,0,0,0,2,2H5a2,2,0,0,0,2-2V3A2,2,0,0,0,5,1ZM3.5,21A1.5,1.5,0,1,1,5,19.5,1.5,1.5,0,0,1,3.5,21Zm1-5h-2a.5.5,0,0,1,0-1h2a.5.5,0,0,1,0,1Zm0-2h-2a.5.5,0,0,1,0-1h2a.5.5,0,0,1,0,1Zm0-2h-2a.5.5,0,0,1,0-1h2a.5.5,0,0,1,0,1Z" style="fill:#303c42"/><path d="M13,1H10A2,2,0,0,0,8,3V21a2,2,0,0,0,2,2h3a2,2,0,0,0,2-2V3A2,2,0,0,0,13,1ZM11.5,21A1.5,1.5,0,1,1,13,19.5,1.5,1.5,0,0,1,11.5,21Zm1-5h-2a.5.5,0,0,1,0-1h2a.5.5,0,0,1,0,1Zm0-2h-2a.5.5,0,0,1,0-1h2a.5.5,0,0,1,0,1Zm0-2h-2a.5.5,0,0,1,0-1h2a.5.5,0,0,1,0,1Z" style="fill:#303c42"/><path d="M24,20.5,22.07,2.78A2,2,0,0,0,19.85,1l-3,.31a2,2,0,0,0-1.38.74A2,2,0,0,0,15,3.5l1.91,17.72a2,2,0,0,0,2,1.78h.21l3-.31a2,2,0,0,0,1.38-.74A2,2,0,0,0,24,20.5Zm-6.13-8.78a.5.5,0,0,1,.44-.55l2-.21a.5.5,0,0,1,.1,1l-2,.21h-.05A.5.5,0,0,1,17.86,11.72Zm.21,2a.5.5,0,0,1,.44-.55l2-.21a.5.5,0,1,1,.1,1l-2,.21h-.05A.5.5,0,0,1,18.07,13.71Zm.21,2a.5.5,0,0,1,.44-.55l2-.21a.5.5,0,1,1,.1,1l-2,.21h-.05A.5.5,0,0,1,18.28,15.7Zm3.08,4.77a1.49,1.49,0,0,1-1,.55h-.16A1.5,1.5,0,0,1,20,18a1.5,1.5,0,0,1,1.65,1.33h0A1.49,1.49,0,0,1,21.35,20.46Z" style="fill:#303c42"/></g>
+	<metadata>
+		<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+			<rdf:Description about="https://iconscout.com/legal#licenses" dc:title="Office; binder; file; file; document; archive" dc:description="Office; binder; file; file; document; archive" dc:publisher="Iconscout" dc:date="2017-02-21" dc:format="image/svg+xml" dc:language="en">
+				<dc:creator>
+					<rdf:Bag>
+						<rdf:li>Alpár - Etele Méder</rdf:li>
+					</rdf:Bag>
+				</dc:creator>
+			</rdf:Description>
+		</rdf:RDF>
+    </metadata></svg>

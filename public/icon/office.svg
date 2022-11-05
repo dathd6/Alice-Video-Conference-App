@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#303C42;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<title>Binder Files</title>
+<g id="Binder_Files">
+	<path class="st0" d="M10,1.5h3c0.8,0,1.5,0.7,1.5,1.5v18c0,0.8-0.7,1.5-1.5,1.5h-3c-0.8,0-1.5-0.7-1.5-1.5V3   C8.5,2.2,9.2,1.5,10,1.5z" style="fill: none; stroke: #303C42; stroke-linecap: round; stroke-linejoin: round;"/>
+	<path class="st0" d="M2,1.5h3c0.8,0,1.5,0.7,1.5,1.5v18c0,0.8-0.7,1.5-1.5,1.5H2c-0.8,0-1.5-0.7-1.5-1.5V3C0.5,2.2,1.2,1.5,2,1.5z" style="fill: none; stroke: #303C42; stroke-linecap: round; stroke-linejoin: round;"/>
+	<circle class="st0" cx="3.5" cy="19.5" r="1" style="fill: none; stroke: #303C42; stroke-linecap: round; stroke-linejoin: round;"/>
+	<circle class="st0" cx="11.5" cy="19.5" r="1" style="fill: none; stroke: #303C42; stroke-linecap: round; stroke-linejoin: round;"/>
+	<line class="st0" x1="2.5" y1="15.5" x2="4.5" y2="15.5" style="fill: none; stroke: #303C42; stroke-linecap: round; stroke-linejoin: round;"/>
+	<line class="st0" x1="2.5" y1="13.5" x2="4.5" y2="13.5" style="fill: none; stroke: #303C42; stroke-linecap: round; stroke-linejoin: round;"/>
+	<line class="st0" x1="2.5" y1="11.5" x2="4.5" y2="11.5" style="fill: none; stroke: #303C42; stroke-linecap: round; stroke-linejoin: round;"/>
+	<line class="st0" x1="10.5" y1="15.5" x2="12.5" y2="15.5" style="fill: none; stroke: #303C42; stroke-linecap: round; stroke-linejoin: round;"/>
+	<line class="st0" x1="10.5" y1="13.5" x2="12.5" y2="13.5" style="fill: none; stroke: #303C42; stroke-linecap: round; stroke-linejoin: round;"/>
+	<line class="st0" x1="10.5" y1="11.5" x2="12.5" y2="11.5" style="fill: none; stroke: #303C42; stroke-linecap: round; stroke-linejoin: round;"/>
+	<path class="st0" d="M22.1,22.2l-3,0.3c-0.8,0.1-1.6-0.5-1.7-1.3L15.5,3.5c-0.1-0.8,0.5-1.6,1.4-1.6c0,0,0,0,0,0l3-0.3   c0.8-0.1,1.6,0.5,1.7,1.3l1.9,17.7C23.5,21.4,22.9,22.1,22.1,22.2z" style="fill: none; stroke: #303C42; stroke-linecap: round; stroke-linejoin: round;"/>
+	<ellipse transform="matrix(0.9945 -0.1045 0.1045 0.9945 -1.9301 2.2174)" class="st0" cx="20.2" cy="19.5" rx="1" ry="1" style="fill: none; stroke: #303C42; stroke-linecap: round; stroke-linejoin: round;"/>
+	<line class="st0" x1="18.8" y1="15.6" x2="20.8" y2="15.4" style="fill: none; stroke: #303C42; stroke-linecap: round; stroke-linejoin: round;"/>
+	<line class="st0" x1="18.6" y1="13.6" x2="20.5" y2="13.4" style="fill: none; stroke: #303C42; stroke-linecap: round; stroke-linejoin: round;"/>
+	<line class="st0" x1="18.4" y1="11.7" x2="20.3" y2="11.5" style="fill: none; stroke: #303C42; stroke-linecap: round; stroke-linejoin: round;"/>
+</g>
+
+	<metadata>
+		<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+			<rdf:Description about="https://iconscout.com/legal#licenses" dc:title="Office; binder; file; file; document; archive" dc:description="Office; binder; file; file; document; archive" dc:publisher="Iconscout" dc:date="2017-02-16" dc:format="image/svg+xml" dc:language="en">
+				<dc:creator>
+					<rdf:Bag>
+						<rdf:li>Alpár - Etele Méder</rdf:li>
+					</rdf:Bag>
+				</dc:creator>
+			</rdf:Description>
+		</rdf:RDF>
+    </metadata></svg>

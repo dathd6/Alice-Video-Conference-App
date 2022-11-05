@@ -1,0 +1,25 @@
+mutation UpdateInfo(
+  $banner: String
+  $avatar: String
+  $fullname: String
+  $email: String
+  $username: String
+  $joined: Float
+  $cancel: Float
+  $document: Float
+  $timeSpend: Float
+) {
+  updateInfo(
+    banner: $banner
+    avatar: $avatar
+    fullname: $fullname
+    email: $email
+    username: $username
+    joined: $joined
+    cancel: $cancel
+    document: $document
+    timeSpend: $timeSpend
+  ) {
+    ...UserFragment
+  }
+}

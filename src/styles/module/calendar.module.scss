@@ -1,0 +1,119 @@
+@import "../utils/animation";
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5rem;
+
+  .header {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    width: 33rem;
+    background-color: #f7f9fa;
+    padding: 2rem 1rem 1rem 3rem;
+    border-bottom: solid 0.1rem #ebeef0;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+
+    .title {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    .groupArrow {
+      right: 3rem;
+      position: absolute;
+      svg {
+        width: 2rem;
+        height: 2rem;
+        path {
+          fill: #455af7;
+        }
+      }
+
+      .backward {
+        &:hover {
+          animation: backward 1s;
+          animation-iteration-count: 3;
+        }
+      }
+
+      .forward {
+        &:hover {
+          animation: forward 1s;
+          animation-iteration-count: 3;
+        }
+      }
+    }
+  }
+
+  .calendar {
+    font-size: 1.2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    font-weight: 500;
+    background-color: #f7f9fa;
+    padding: 3rem;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    .day_of_the_week {
+      text-align: center;
+      color: #8c949f;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 1rem;
+    }
+
+    .date {
+      position: relative;
+      color: rgb(58, 52, 52);
+      width: 3rem;
+      height: 3rem;
+      border-radius: 1rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        background-color: #cccccc;
+        color: #fff;
+      }
+
+      .list_event {
+        position: absolute;
+        display: inline-flex;
+        bottom: 0;
+
+        .event {
+          width: 0.5rem;
+          height: 0.5rem;
+          border-radius: 100%;
+
+          &:not(:last-child) {
+            margin-right: 0.1krem;
+          }
+        }
+      }
+    }
+
+    .another_month {
+      color: #8c949f;
+    }
+
+    .active {
+      background-color: #455af7;
+      color: #fff;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+  }
+}

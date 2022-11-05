@@ -1,0 +1,17 @@
+mutation CreateNotification(
+  $receiver: Float!
+  $content: String!
+  $url: String!
+  $type: String!
+  $isSeen: Boolean!
+) {
+  createNotification(
+    receiver: $receiver
+    content: $content
+    url: $url
+    type: $type
+    isSeen: $isSeen
+  ) {
+    ...NotificationFragment
+  }
+}

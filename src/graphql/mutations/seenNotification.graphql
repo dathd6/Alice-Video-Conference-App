@@ -1,0 +1,3 @@
+mutation SeenNotification($id: Float!) {
+  seenNotification(id: $id)
+}

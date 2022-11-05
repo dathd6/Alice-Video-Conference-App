@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Business Cards</title><g id="Business_Cards" data-name="Business Cards"><path d="M22,8H5a2,2,0,0,0-2,2V21a2,2,0,0,0,2,2H22a2,2,0,0,0,2-2V10A2,2,0,0,0,22,8ZM9,12a2,2,0,1,1-2,2A2,2,0,0,1,9,12Zm4,7a1,1,0,0,1-1,1H6a1,1,0,0,1-1-1v-.23a1.74,1.74,0,0,1,1-1.57,7.07,7.07,0,0,1,3-.74,7.07,7.07,0,0,1,3,.74,1.74,1.74,0,0,1,1,1.57Zm8.5-1h-6a.5.5,0,1,1,0-1h6a.5.5,0,1,1,0,1Zm0-3h-8a.5.5,0,1,1,0-1h8a.5.5,0,1,1,0,1Z" style="fill:#303c42"/><path d="M1.75,9.61a.5.5,0,0,0-.5,0L1,9.76a2,2,0,0,0-.73,2.73l.8,1.4a.5.5,0,0,0,.43.25l.13,0A.5.5,0,0,0,2,13.64V10A.5.5,0,0,0,1.75,9.61Z" style="fill:#303c42"/><path d="M7.58,7H20.29a.5.5,0,0,0,.43-.75L18.29,2a2,2,0,0,0-2.71-.73L7.33,6.07A.5.5,0,0,0,7.58,7Z" style="fill:#303c42"/></g>
+	<metadata>
+		<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+			<rdf:Description about="https://iconscout.com/legal#licenses" dc:title="name; id; tag; license; identity; office; 2" dc:description="name; id; tag; license; identity; office; 2" dc:publisher="Iconscout" dc:date="2017-02-21" dc:format="image/svg+xml" dc:language="en">
+				<dc:creator>
+					<rdf:Bag>
+						<rdf:li>Alpár - Etele Méder</rdf:li>
+					</rdf:Bag>
+				</dc:creator>
+			</rdf:Description>
+		</rdf:RDF>
+    </metadata></svg>

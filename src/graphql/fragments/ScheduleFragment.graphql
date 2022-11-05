@@ -1,0 +1,13 @@
+fragment ScheduleFragment on Schedule {
+  id
+  title
+  dateType
+  startAt
+  banner
+  host {
+    ...UserFragment
+  }
+  description
+  company
+  createdAt
+}

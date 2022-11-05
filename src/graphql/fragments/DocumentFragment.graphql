@@ -1,0 +1,19 @@
+fragment DocumentFragment on Document {
+  id
+  title
+  logo
+  record
+  recordStartedAt
+  moreInfo
+  startedAt
+  duration
+  transcripts {
+    ...TranscriptFragment
+  }
+  members
+  absents
+  schedule {
+    ...ScheduleFragment
+  }
+  createdAt
+}

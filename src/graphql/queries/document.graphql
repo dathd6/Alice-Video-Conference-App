@@ -1,0 +1,11 @@
+query Document($id: Float!) {
+  document(id: $id) {
+    document {
+      ...DocumentFragment
+    }
+    users {
+      ...UserFragment
+    }
+    isabsent
+  }
+}

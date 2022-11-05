@@ -1,0 +1,3 @@
+mutation DeleteSchedule($id: Float!) {
+  deleteSchedule(id: $id)
+}

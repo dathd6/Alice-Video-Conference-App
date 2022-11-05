@@ -1,0 +1,7 @@
+fragment UserInfoFragment on UserInfo {
+  id
+  user {
+    ...UserFragment
+  }
+  relationship
+}

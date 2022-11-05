@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>End Call</title><g id="End_Call" data-name="End Call"><path d="M23.59,12A15.83,15.83,0,0,0,.41,12a1.52,1.52,0,0,0,0,2.08l2.3,2.43a1.44,1.44,0,0,0,2,0,10.15,10.15,0,0,1,2.6-2,1.45,1.45,0,0,0,.78-1.25l.35-2.63a10.38,10.38,0,0,1,7,0l.34,2.56a1.5,1.5,0,0,0,.77,1.32,10.17,10.17,0,0,1,2.61,2,1.4,1.4,0,0,0,2,0l2.31-2.43a1.53,1.53,0,0,0,0-2.08Z" style="fill:#303c42"/></g>
+	<metadata>
+		<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+			<rdf:Description about="https://iconscout.com/legal#licenses" dc:title="call; phone; telephone; end" dc:description="call; phone; telephone; end" dc:publisher="Iconscout" dc:date="2017-02-21" dc:format="image/svg+xml" dc:language="en">
+				<dc:creator>
+					<rdf:Bag>
+						<rdf:li>Alpár - Etele Méder</rdf:li>
+					</rdf:Bag>
+				</dc:creator>
+			</rdf:Description>
+		</rdf:RDF>
+    </metadata></svg>

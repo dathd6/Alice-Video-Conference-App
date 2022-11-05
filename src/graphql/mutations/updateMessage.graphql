@@ -1,0 +1,3 @@
+mutation updateMessage($id: Float!, $context: String!) {
+  updateMessage(id: $id, context: $context)
+}

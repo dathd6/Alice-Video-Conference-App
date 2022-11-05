@@ -1,0 +1,5 @@
+query SearchUser($search: String!, $friend: Boolean) {
+  searchUser(search: $search, friend: $friend) {
+    ...UserInfoFragment
+  }
+}
